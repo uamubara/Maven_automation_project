@@ -19,15 +19,16 @@ public class T1_TestNG_Google {
         //navigate to google web page
         driver.navigate().to("https://www.google.com");
         //search for BMW
-        Reusable_Methods.sendKeys(driver,"//*[@name= 'q']","BMW","SearchField");
+        Reusable_Methods.sendKeys(driver, "//*[@name= 'q']", "BMW", "SearchField");
         //hit submit on the google search button
-        Reusable_Methods.submitMethod(driver,"//*[@name= 'btnK']","Submit");
+        Reusable_Methods.submitMethod(driver, "//*[@name= 'btnK']", "Submit");
         Thread.sleep(1000);
     }//end of test case 1
+
     @Test(priority = 2)
-    public void captureSearchResult(){
+    public void captureSearchResult() {
         //store the search result into a string variable
-        String result = Reusable_Methods.captureText(driver,"//*[@id = 'result-stats']","SearchResult");
+        String result = Reusable_Methods.captureText(driver, "//*[@id = 'result-stats']", "SearchResult");
         //split the result
         String[] searchResultArray = result.split(" ");
         //print out the number only
@@ -35,7 +36,7 @@ public class T1_TestNG_Google {
     }//end of test case 2
 
     @AfterSuite
-    public void quitDriver(){
+    public void quitDriver() {
         driver.quit();
     }//end of after suite
 }

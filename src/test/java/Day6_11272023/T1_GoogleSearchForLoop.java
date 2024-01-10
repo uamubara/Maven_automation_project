@@ -29,7 +29,7 @@ public class T1_GoogleSearchForLoop {
         driver.manage().window().maximize();
 
         //For loop to Iterate through test steps. Set number of iterations to the size of ArrayList.
-        for (int i=0; i < carBrands.size(); i++){
+        for (int i = 0; i < carBrands.size(); i++) {
 
             //navigate to Bing web Page
             driver.navigate().to("https://www.Google.com");

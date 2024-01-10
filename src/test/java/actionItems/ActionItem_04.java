@@ -32,9 +32,8 @@ public class ActionItem_04 {
         WebDriver driver = new ChromeDriver(options);
 
 
-
         //For loop to iterate through test steps multiple times
-        for (int i=0; i < zipCode.size(); i++){
+        for (int i = 0; i < zipCode.size(); i++) {
 
             //navigate to weightwatchers.com
             driver.navigate().to("https://www.weightwatchers.com/us/find-a-workshop");
@@ -62,18 +61,18 @@ public class ActionItem_04 {
             Thread.sleep(3000);
 
             //Define WebElements ArrayList
-            ArrayList <WebElement> linkContainer = new ArrayList<>(driver.findElements(By.xpath("//*[contains(@class,'-3SE46')]")));
+            ArrayList<WebElement> linkContainer = new ArrayList<>(driver.findElements(By.xpath("//*[contains(@class,'-3SE46')]")));
 
             //Conditional Statements to click on studio links. Condition based on for-loop iteration number (i=0),(i=1),(i=2)
-            if(i == 0){
+            if (i == 0) {
                 //click on second link
                 linkContainer.get(1).click();
 
-            }else if(i == 1){
+            } else if (i == 1) {
                 //click on third link
                 linkContainer.get(2).click();
 
-            }else if(i == 2){
+            } else if (i == 2) {
                 //click on first link
                 linkContainer.get(0).click();
             }

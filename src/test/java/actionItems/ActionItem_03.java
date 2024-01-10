@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.ArrayList;
 
-public class ActionItem03 {
+public class ActionItem_03 {
     public static void main(String[] args) throws InterruptedException {
 
         //Declare Array list of 5 Values
@@ -26,7 +26,7 @@ public class ActionItem03 {
         WebDriver driver = new ChromeDriver();
 
         //For loop to Iterate through test steps. Set number of iterations to the size of ArrayList.
-        for (int i=0; i < sports.size(); i++){
+        for (int i = 0; i < sports.size(); i++) {
 
             //navigate to Bing web Page
             driver.navigate().to("https://www.Bing.com");

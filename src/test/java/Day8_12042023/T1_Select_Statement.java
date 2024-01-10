@@ -60,8 +60,5 @@ public class T1_Select_Statement {
         driver.quit();
 
 
-
-
-
     }
 }

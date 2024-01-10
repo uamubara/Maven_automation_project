@@ -24,6 +24,7 @@ public class T2_TestNG_DependsOn {
         Reusable_Methods.submitMethod(driver, "//*[@name= 'btnK']", "Submit");
         Thread.sleep(1000);
     }//end of test case 1
+
     @Test(dependsOnMethods = "tc001_searchForACar")
     public void tc002_captureSearchResult() {
         //store the search result into a string variable

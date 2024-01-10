@@ -4,7 +4,7 @@ import Day10_12112023.Reusable_Methods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class T2_Google_HardAssert extends TestParent{
+public class T2_Google_HardAssert extends TestParent {
 
     @Test(priority = 1)
     public void tc001_verifyGoogleTitle() throws InterruptedException {

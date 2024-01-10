@@ -36,14 +36,14 @@ public class T2_WebElementsArrayList {
 
 
         //Define WebElements ArrayList
-        ArrayList <WebElement> yahooHeaders = new ArrayList<>(driver.findElements(By.xpath("//*[contains(@class,'_yb_yc')]")));
+        ArrayList<WebElement> yahooHeaders = new ArrayList<>(driver.findElements(By.xpath("//*[contains(@class,'_yb_yc')]")));
 
         //print out how many headers there are
         System.out.println("There are " + yahooHeaders.size() + " yahoo headers");
 
 
         //for loop to print headers from ArrayList
-        for (int i=0; i< yahooHeaders.size(); i++){
+        for (int i = 0; i < yahooHeaders.size(); i++) {
 
             //print headers
             System.out.println("The yahoo header is:  " + yahooHeaders.get(i).getText());

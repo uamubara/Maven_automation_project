@@ -15,7 +15,7 @@ public class T1_WhileLoop {
 
         //set the initial counter for the while loop
         int i = 0;
-        while (i < boroughs.size()){
+        while (i < boroughs.size()) {
             //iteration
             //first 0 < 5
             //second 1 < 5

@@ -1,12 +1,10 @@
-package Day14_010224;
+package Day14_01022024;
 
 import Day10_12112023.Reusable_Methods;
 import Day13_12192023.TestParent;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static Day13_12192023.TestParent.driver;
 
 public class T1_Yahoo_Boolean extends TestParent {
 

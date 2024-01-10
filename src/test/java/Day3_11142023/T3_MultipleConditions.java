@@ -7,7 +7,7 @@ public class T3_MultipleConditions {
         int b = 4;
         int c = 7;
         // start of the conditional statement
-        if (a + b > c){
+        if (a + b > c) {
             System.out.println("Sum of a and b is greater than c");
         } else if (a + b < c) {
             System.out.println("Sum of a and b is less than c");

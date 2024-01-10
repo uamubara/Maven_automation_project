@@ -210,4 +210,26 @@ public class Reusable_Methods {
             // Handle the exception appropriately, e.g., log details, retry, or fail the test
         }
     }
+
+    public static void printStudioWorkshopSchedule(WebDriver driver, String xPath) {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        try {
+            // Explicit wait for the table element to be present and visible
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xPath)));
+
+            // Scroll to the table element
+            WebElement tbl = driver.findElement(By.xpath(xPath));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tbl);
+
+            // Print the schedule
+            System.out.println(tbl.getText());
+            System.out.println(" "); // Blank line for better visibility
+
+        } catch (NoSuchElementException | TimeoutException e) {
+            System.err.println("Error printing studio workshop schedule: " + e.getMessage());
+            // Handle the exception appropriately, e.g., log details, retry, or fail the test
+        }
+    }
+
 }

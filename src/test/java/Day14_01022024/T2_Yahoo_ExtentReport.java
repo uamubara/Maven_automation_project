@@ -1,10 +1,8 @@
-package Day14_010224;
+package Day14_01022024;
 
 import Day10_12112023.Reusable_Methods;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status; // Import LogStatus
-
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
@@ -31,7 +29,7 @@ public class T2_Yahoo_ExtentReport {
 
     @Test
     public void tc001_verifyStaySignedInIsChecked() {
-       // logger = reports.startTest("tc001_verifyStaySignedInIsChecked");
+        // logger = reports.startTest("tc001_verifyStaySignedInIsChecked");
         //navigate to yahoo.com
         driver.navigate().to("https://www.yahoo.com/");
         //click on sign in button
@@ -43,8 +41,8 @@ public class T2_Yahoo_ExtentReport {
         //print out if checkbox is selected
         System.out.println("The checkbox is checked: " + isStaySignedInChecked);
         //assert if its true
-        if (isStaySignedInChecked == true) {
-           // logger.log(LogStatus.PASS, "The checkbox is checked " + isStaySignedInChecked);
+        if (isStaySignedInChecked) {
+            // logger.log(LogStatus.PASS, "The checkbox is checked " + isStaySignedInChecked);
         } else {
             //logger.log(LogStatus.FAIL, "The checkbox is checked " + isStaySignedInChecked);
         }
